@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { AtlassianConnect } from "./types/jira-cloud-api";
+
+declare const AP: AtlassianConnect;
 
 function App() {
+  function getApObject() {
+    console.log(AP);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>JIRA ts test app</h1>
+        <button onClick={getApObject}>Log AP object</button>
     </div>
   );
 }

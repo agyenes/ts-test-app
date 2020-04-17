@@ -1,0 +1,29 @@
+{
+    "name": "Project Valami 4",
+    "description": "Atlassian Connect app",
+    "key": "com.example.myapp",
+    "baseUrl": "https://d2srfec2kcc3vh.cloudfront.net",
+    "vendor": {
+        "name": "Information Systems X",
+        "url": "http://example.com"   
+    },
+    "scopes":[
+        "read", "write"
+    ],
+    "authentication": {
+        "type": "none"  
+    },
+    "apiVersion": 1,
+    "modules": {
+        "generalPages": [
+            {
+                "url": "/index.html", 
+                "key": "index",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Project Valami"
+                }
+            }
+        ]
+    }
+}
